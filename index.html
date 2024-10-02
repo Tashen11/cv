@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tashen Pillay - Professional Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/kottenator/jquery-circle-progress/1.2.2/dist/circle-progress.js"></script>
+</head>
+<body>
+    <div id="landing-page" class="landing-page">
+        <video autoplay loop muted playsinline class="background-video">
+            <source src="bgv.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="landing-content">
+            <div class="profile-pic">
+                <img src="profile (2).jpg" alt="Tashen Pillay" class="profile-pic-landing">
+            </div>
+            <section id="profile">
+                <h2>Profile</h2>
+                <p>Hello, I'm Tashen, and I'm thrilled to share how I can contribute to your organization! At just 20 years old, I have developed a profound passion for technology from an early age, which naturally led me to pursue a career in the IT sector.</p>
+                <p>I am highly computer literate and a critical thinker, with a strong attention to detail and an unwavering determination to achieve perfection in everything I do. Currently, I am dedicated to pursuing a Bachelor's degree in Computer Science at Varsity College.</p>
+                <p>My enthusiasm for technology, combined with my skills and qualities, make me a valuable asset to any forward-thinking business. I am eager to bring my expertise and passion to your team, contributing to innovative solutions and driving success.</p>
+            </section>
+            <button onclick="showFullCV()">Continue</button>
+        </div>
+    </div>
+
+    <div id="full-cv" class="full-cv" style="display: none;">
+        <header>
+            <div class="header-content">
+                <img src="profile (2).jpg" alt="Tashen Pillay" class="profile-pic-header">
+                <div>
+                    <h1>Tashen Pillay</h1>
+                    <p>Computer Science Student</p>
+                </div>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+            </ul>
+        </nav>
+
+        <section id="home">
+            <h2>Welcome to My Professional Portfolio</h2>
+            <p>Hello, I'm Tashen Pillay, a passionate Computer Science student from Durban, South Africa. Welcome to my professional portfolio where I showcase my skills, experience, and education in the IT sector. I am dedicated to technology and committed to excellence in everything I do.</p>
+        </section>
+
+        
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="card">
+                <div class="skill">
+                    <label for="programming">Programming</label>
+                    <div class="progress-bar" style="background-color: #f1f1f1; border-radius: 20px; width: 100%; height: 10px;">
+                        <div id="programming" class="progress" style="width: 73%; background-color: #4caf50; height: 100%; border-radius: 20px;"></div>
+                    </div>
+                </div>
+                
+                <div class="skill">
+                    <label for="database">Database Management</label>
+                    <div class="progress-bar" style="background-color: #f1f1f1; border-radius: 20px; width: 100%; height: 10px;">
+                        <div id="database" class="progress" style="width: 64%; background-color: #2196f3; height: 100%; border-radius: 20px;"></div>
+                    </div>
+                </div>
+                
+                <div class="skill">
+                    <label for="network">Network Engineering</label>
+                    <div class="progress-bar" style="background-color: #f1f1f1; border-radius: 20px; width: 100%; height: 10px;">
+                        <div id="network" class="progress" style="width: 78%; background-color: #ff9800; height: 100%; border-radius: 20px;"></div>
+                    </div>
+                </div>
+                
+                <div class="skill">
+                    <label for="software">Software Development</label>
+                    <div class="progress-bar" style="background-color: #f1f1f1; border-radius: 20px; width: 100%; height: 10px;">
+                        <div id="software" class="progress" style="width: 73.5%; background-color: #e91e63; height: 100%; border-radius: 20px;"></div>
+                    </div>
+                </div>
+                
+                <div class="skill">
+                    <label for="cloud">Cloud Computing</label>
+                    <div class="progress-bar" style="background-color: #f1f1f1; border-radius: 20px; width: 100%; height: 10px;">
+                        <div id="cloud" class="progress" style="width: 69%; background-color: #9c27b0; height: 100%; border-radius: 20px;"></div>
+                    </div>
+                </div>
+                
+                <div class="skill">
+                    <label for="security">Security</label>
+                    <div class="progress-bar" style="background-color: #f1f1f1; border-radius: 20px; width: 100%; height: 10px;">
+                        <div id="security" class="progress" style="width: 66%; background-color: #ff5722; height: 100%; border-radius: 20px;"></div>
+                    </div>
+                </div>
+                
+                <div class="skill">
+                    <label for="frontend">Frontend Design</label>
+                    <div class="progress-bar" style="background-color: #f1f1f1; border-radius: 20px; width: 100%; height: 10px;">
+                        <div id="frontend" class="progress" style="width: 83%; background-color: #3f51b5; height: 100%; border-radius: 20px;"></div>
+                    </div>
+                </div>
+                
+                <div class="skill">
+                    <label for="project-management">Project Management</label>
+                    <div class="progress-bar" style="background-color: #f1f1f1; border-radius: 20px; width: 100%; height: 10px;">
+                        <div id="project-management" class="progress" style="width: 65%; background-color: #00bcd4; height: 100%; border-radius: 20px;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="card">
+                <h3><i class="fas fa-laptop"></i> Web Design</h3>
+                <p>2019 - Present</p>
+                <ul>
+                    <li>Designing and developing websites using Shopify, Wix, and Wordpress platforms.</li>
+                </ul>
+                <h3><i class="fas fa-bullhorn"></i> Digital Marketing</h3>
+                <p>2020</p>
+                <ul>
+                    <li>Completed the Legendary Marketer course.</li>
+                </ul>
+                <h3><i class="fas fa-car"></i> Toyota Prospection</h3>
+                <p>2023</p>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="card">
+                <h3><i class="fas fa-school"></i> Secondary School</h3>
+                <p>Kharwastan Secondary School, 2017 - 2021</p>
+                <p>Bachelors Pass in Matric, 2021</p>
+                <h3><i class="fas fa-university"></i> Bachelor of Computer and Information Sciences in Application Development</h3>
+                <p>Varsity College, 2022 - Present</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <div class="card">
+                <p><i class="fas fa-phone"></i> <strong>Phone:</strong> +27 61 0130 309</p>
+                <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:Tashenpillay7@gmail.com">Tashenpillay7@gmail.com</a></p>
+                <p><i class="fab fa-linkedin"></i> <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/tashen-pillay-78b272247" target="_blank">Tashen Pillay</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Durban, South Africa</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Tashen Pillay. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        function showFullCV() {
+            document.getElementById('landing-page').style.display = 'none';
+            document.getElementById('full-cv').style.display = 'block';
+            document.querySelector('header').style.display = 'flex'; // Show header when full CV is displayed
+        }
+
+        $(document).ready(function(){
+            $('.circle').each(function(){
+                var circle = $(this);
+                var value = circle.attr('data-value');
+                circle.circleProgress({
+                    value: value,
+                    size: 120,
+                    thickness: 10,
+                    fill: { gradient: ["#00bfff", "#1e90ff"] }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

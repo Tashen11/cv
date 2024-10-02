@@ -1,0 +1,260 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    display: none; /* Hide header on the landing page */
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the header content */
+}
+
+header h1 {
+    margin: 0 10px;
+}
+
+header p {
+    margin: 0;
+    font-style: italic;
+}
+
+nav {
+    background-color: #004080;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Center the nav items */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center the nav items */
+}
+
+nav ul li {
+    margin: 0 10px; /* Add some spacing between nav items */
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #0059b3;
+}
+
+section {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center the content in the section */
+}
+
+h2 {
+    border-bottom: 2px solid #003366;
+    padding-bottom: 10px;
+}
+
+.card {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card ul li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.landing-page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.profile-pic-landing {
+    border-radius: 50%;
+    width: 50px;  /* Small size for the landing page image */
+    height: 50px; /* Small size for the landing page image */
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.profile-pic-header {
+    border-radius: 50%;
+    width: 30px;  /* Small size for the header image */
+    height: 30px; /* Small size for the header image */
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.landing-content {
+    max-width: 600px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.full-cv {
+    display: none;
+}
+
+.full-cv header {
+    display: flex;
+}
+
+section {
+    margin-bottom: 40px; /* Ensure there's enough space for scrolling */
+}
+
+#hobbies {
+    margin-bottom: 80px; /* Add extra margin for the hobbies section */
+}
+
+.skills-chart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    position: relative;
+}
+
+.circle strong {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    color: #003366;
+}
+
+#experience .card, #contact .card, #education .card, #hobbies .card {
+    text-align: center; /* Center the text in these sections */
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill-name {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #003366;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.progress-bar-inner {
+    height: 20px;
+    background-color: #007BFF;
+    width: 0;
+    border-radius: 25px;
+}
+
+nav ul li a[href="#skills"] {
+    color: white;
+}
+
+nav ul li a[href="#skills"]:hover {
+    background-color: #0059b3;
+}
+
+@keyframes loadSkill {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
+
+.progress-bar-inner.loaded {
+    animation: loadSkill 1s ease-out;
+}
