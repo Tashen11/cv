@@ -3,163 +3,261 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tashen Pillay - Professional Portfolio</title>
+    <title>Tashen Pillay - Software Developer Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.rawgit.com/kottenator/jquery-circle-progress/1.2.2/dist/circle-progress.js"></script>
 </head>
 <body>
     <div id="landing-page" class="landing-page">
-        <video autoplay loop muted playsinline class="background-video">
-            <source src="bgv.mp4" type="video/mp4">
-            
-        </video>
+        <div class="background-gradient"></div>
         <div class="landing-content">
             <div class="profile-pic">
                 <img src="profile (2).jpg" alt="Tashen Pillay" class="profile-pic-landing">
             </div>
+            <h1 class="landing-title">Tashen Pillay</h1>
+            <p class="landing-subtitle">Software Developer</p>
             <section id="profile">
-                <h2>Profile</h2>
-                <p>Hello, I'm Tashen, and I'm thrilled to share how I can contribute to your organization! At just 20 years old, I have developed a profound passion for technology from an early age, which naturally led me to pursue a career in the IT sector.</p>
-                <p>I am highly computer literate and a critical thinker, with a strong attention to detail and an unwavering determination to achieve perfection in everything I do. Currently, I am dedicated to pursuing a Bachelor's degree in Computer Science at Varsity College.</p>
-                <p>My enthusiasm for technology, combined with my skills and qualities, make me a valuable asset to any forward-thinking business. I am eager to bring my expertise and passion to your team, contributing to innovative solutions and driving success.</p>
+                <p>I am a highly motivated and detail-oriented Computer Science graduate with a delightful sense of humor and a strong passion for technology. I have recently completed my Bachelor's degree in Computer Science at Varsity College, earning two distinctions for my academic achievements.</p>
+                <p>My technical expertise, combined with critical thinking skills, enables me to approach complex challenges with precision and efficiency. I am confident that my strong analytical abilities, attention to detail, and commitment to excellence will allow me to add value to your organization.</p>
             </section>
-            <button onclick="showFullCV()">Continue</button>
+            <button onclick="showFullCV()" class="cta-button">
+                <span>View Portfolio</span>
+                <i class="fas fa-arrow-right"></i>
+            </button>
+            
         </div>
     </div>
 
     <div id="full-cv" class="full-cv" style="display: none;">
         <header>
             <div class="header-content">
-                <img src="profile (2).jpg" alt="Tashen Pillay" class="profile-pic-header">
-                <div>
-                    <h1>Tashen Pillay</h1>
-                    <p>Computer Science Student</p>
+                <div class="header-left">
+                    <img src="profile (2).jpg" alt="Tashen Pillay" class="profile-pic-header">
+                    <div>
+                        <h1>Tashen Pillay</h1>
+                        <p class="header-subtitle">Software Developer</p>
+                    </div>
                 </div>
+                
             </div>
         </header>
 
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-                
+                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+                <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+                <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                <li><a href="#hobbies"><i class="fas fa-heart"></i> Hobbies</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
         </nav>
 
-        <section id="home">
-            <h2>Welcome to My Professional Portfolio</h2>
-            <p>Hello, I'm Tashen Pillay, a passionate Computer Science student from Durban, South Africa. Welcome to my professional portfolio where I showcase my skills, experience, and education in the IT sector. I am dedicated to technology and committed to excellence in everything I do.</p>
-        </section>
+        <main class="container">
+            <section id="home" class="fade-in">
+                <div class="section-header">
+                    <h2><i class="fas fa-user"></i> Profile</h2>
+                </div>
+                <div class="card">
+                    <p>I am a highly motivated and detail-oriented Computer Science graduate with a delightful sense of humor and a strong passion for technology. I have recently completed my Bachelor's degree in Computer Science at Varsity College, earning two distinctions for my academic achievements.</p>
+                    <p>My technical expertise, combined with critical thinking skills, enables me to approach complex challenges with precision and efficiency. Throughout my academic career, I have developed a solid foundation in IT, complemented by my ability to adapt to new technologies and contribute meaningfully to innovative projects.</p>
+                    <p>With a deep enthusiasm for the IT sector and a keen drive for success, I am eager to bring my skills and dedication to a dynamic team, delivering solutions that drive progress and innovation.</p>
+                </div>
+            </section>
 
-        
+            <section id="skills" class="fade-in">
+                <div class="section-header">
+                    <h2><i class="fas fa-star"></i> Skills</h2>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3><i class="fas fa-laptop-code"></i> Development</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">C#</span>
+                            <span class="skill-tag">Kotlin</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">HTML/CSS</span>
+                            <span class="skill-tag">Web Design</span>
+                            <span class="skill-tag">UI/UX</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3><i class="fas fa-database"></i> Data & Cloud</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Database Management</span>
+                            <span class="skill-tag">Cloud Computing</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3><i class="fas fa-cogs"></i> Professional</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Design Thinking</span>
+                            <span class="skill-tag">Problem-Solving</span>
+                            <span class="skill-tag">Project Management</span>
+                            <span class="skill-tag">Critical Thinking</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3><i class="fas fa-users"></i> Soft Skills</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Active Listening</span>
+                            <span class="skill-tag">Creativity</span>
+                            <span class="skill-tag">Dependable</span>
+                            <span class="skill-tag">Computer Literacy</span>
+                            <span class="skill-tag">Attention to Detail</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        <section id="skills">
-            <h2>Skills</h2>
-            <div class="card">
-                <div class="skill">
-                    <label for="programming">Programming</label>
-                    <div class="progress-bar" style="background-color: #f1f1f1; border-radius: 20px; width: 100%; height: 10px;">
-                        <div id="programming" class="progress" style="width: 73%; background-color: #4caf50; height: 100%; border-radius: 20px;"></div>
+            <section id="experience" class="fade-in">
+                <div class="section-header">
+                    <h2><i class="fas fa-briefcase"></i> Experience</h2>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <h3>Toyota Prospection</h3>
+                            <span class="timeline-date">NOV 2025 - PRESENT</span>
+                        </div>
+                        <p class="timeline-role">Team Member</p>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <h3>Innov8ive Software Solutions</h3>
+                            <span class="timeline-date">AUG 2025 - NOV 2025</span>
+                        </div>
+                        <p class="timeline-role">Junior Software Developer</p>
+                        <ul class="timeline-details">
+                            <li>Website Development</li>
+                            <li>Maintaining websites and databases</li>
+                            <li>Shopify store development</li>
+                            <li>Wordpress website development</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <h3>Garment Division</h3>
+                            <span class="timeline-date">JULY 2025 - AUG 2025</span>
+                        </div>
+                        <p class="timeline-role">IT Admin</p>
+                        <ul class="timeline-details">
+                            <li>Managing and supporting IT infrastructure</li>
+                            <li>User support, system maintenance, network administration, and security</li>
+                            <li>Troubleshooting hardware/software issues</li>
+                            <li>Configuring Windows environments</li>
+                            <li>Ensuring smooth day-to-day IT operations</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <h3>Web Design & Digital Marketing</h3>
+                            <span class="timeline-date">2019 - Present</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Designing and developing websites using Shopify, Wix, and WordPress</li>
+                            <li>Completed Legendary Marketer course (2020)</li>
+                        </ul>
                     </div>
                 </div>
-                
-                <div class="skill">
-                    <label for="database">Database Management</label>
-                    <div class="progress-bar" style="background-color: #f1f1f1; border-radius: 20px; width: 100%; height: 10px;">
-                        <div id="database" class="progress" style="width: 64%; background-color: #2196f3; height: 100%; border-radius: 20px;"></div>
-                    </div>
-                </div>
-                
-                <div class="skill">
-                    <label for="network">Network Engineering</label>
-                    <div class="progress-bar" style="background-color: #f1f1f1; border-radius: 20px; width: 100%; height: 10px;">
-                        <div id="network" class="progress" style="width: 78%; background-color: #ff9800; height: 100%; border-radius: 20px;"></div>
-                    </div>
-                </div>
-                
-                <div class="skill">
-                    <label for="software">Software Development</label>
-                    <div class="progress-bar" style="background-color: #f1f1f1; border-radius: 20px; width: 100%; height: 10px;">
-                        <div id="software" class="progress" style="width: 73.5%; background-color: #e91e63; height: 100%; border-radius: 20px;"></div>
-                    </div>
-                </div>
-                
-                <div class="skill">
-                    <label for="cloud">Cloud Computing</label>
-                    <div class="progress-bar" style="background-color: #f1f1f1; border-radius: 20px; width: 100%; height: 10px;">
-                        <div id="cloud" class="progress" style="width: 69%; background-color: #9c27b0; height: 100%; border-radius: 20px;"></div>
-                    </div>
-                </div>
-                
-                <div class="skill">
-                    <label for="security">Security</label>
-                    <div class="progress-bar" style="background-color: #f1f1f1; border-radius: 20px; width: 100%; height: 10px;">
-                        <div id="security" class="progress" style="width: 66%; background-color: #ff5722; height: 100%; border-radius: 20px;"></div>
-                    </div>
-                </div>
-                
-                <div class="skill">
-                    <label for="frontend">Frontend Design</label>
-                    <div class="progress-bar" style="background-color: #f1f1f1; border-radius: 20px; width: 100%; height: 10px;">
-                        <div id="frontend" class="progress" style="width: 83%; background-color: #3f51b5; height: 100%; border-radius: 20px;"></div>
-                    </div>
-                </div>
-                
-                <div class="skill">
-                    <label for="project-management">Project Management</label>
-                    <div class="progress-bar" style="background-color: #f1f1f1; border-radius: 20px; width: 100%; height: 10px;">
-                        <div id="project-management" class="progress" style="width: 65%; background-color: #00bcd4; height: 100%; border-radius: 20px;"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section id="experience">
-            <h2>Experience</h2>
-            <div class="card">
-                <h3><i class="fas fa-laptop"></i> Web Design</h3>
-                <p>2019 - Present</p>
-                <ul>
-                    <li>Designing and developing websites using Shopify, Wix, and Wordpress platforms.</li>
-                </ul>
-                <h3><i class="fas fa-bullhorn"></i> Digital Marketing</h3>
-                <p>2020</p>
-                <ul>
-                    <li>Completed the Legendary Marketer course.</li>
-                </ul>
-                <h3><i class="fas fa-car"></i> Toyota Prospection</h3>
-                <p>2023</p>
-            </div>
-        </section>
+            </section>
 
-        <section id="education">
-            <h2>Education</h2>
-            <div class="card">
-                <h3><i class="fas fa-school"></i> Secondary School</h3>
-                <p>Kharwastan Secondary School, 2017 - 2021</p>
-                <p>Bachelors Pass in Matric, 2021</p>
-                <h3><i class="fas fa-university"></i> Bachelor of Computer and Information Sciences in Application Development</h3>
-                <p>Varsity College, 2022 - Present</p>
-            </div>
-        </section>
+            <section id="education" class="fade-in">
+                <div class="section-header">
+                    <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+                </div>
+                <div class="education-cards">
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="education-content">
+                            <h3>Bachelor of Computer and Information Sciences in Application Development</h3>
+                            <p class="education-institution">Varsity College</p>
+                            <p class="education-duration">2022 - 2024</p>
+                            <p class="education-achievement">Earned two distinctions for academic achievements</p>
+                        </div>
+                    </div>
+                    
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <div class="education-content">
+                            <h3>Bachelors Pass in Matric</h3>
+                            <p class="education-institution">Kharwastan Secondary School</p>
+                            <p class="education-duration">2017 - 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <div class="card">
-                <p><i class="fas fa-phone"></i> <strong>Phone:</strong> +27 61 0130 309</p>
-                <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:Tashenpillay7@gmail.com">Tashenpillay7@gmail.com</a></p>
-                <p><i class="fab fa-linkedin"></i> <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/tashen-pillay-78b272247" target="_blank">Tashen Pillay</a></p>
-                <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Durban, South Africa</p>
-            </div>
-        </section>
+            <section id="hobbies" class="fade-in">
+                <div class="section-header">
+                    <h2><i class="fas fa-heart"></i> Hobbies & Interests</h2>
+                </div>
+                <div class="hobbies-grid">
+                    <div class="hobby-card">
+                        <i class="fas fa-code"></i>
+                        <h3>Coding</h3>
+                    </div>
+                    <div class="hobby-card">
+                        <i class="fas fa-basketball-ball"></i>
+                        <h3>Playing/Watching Sports</h3>
+                    </div>
+                    <div class="hobby-card">
+                        <i class="fas fa-dumbbell"></i>
+                        <h3>Gyming</h3>
+                    </div>
+                    <div class="hobby-card">
+                        <i class="fas fa-car"></i>
+                        <h3>Car Shows/Events</h3>
+                    </div>
+                    <div class="hobby-card">
+                        <i class="fas fa-tools"></i>
+                        <h3>Building Model Cars</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="fade-in">
+                <div class="section-header">
+                    <h2><i class="fas fa-envelope"></i> Contact & Reference</h2>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <h3><i class="fas fa-user-circle"></i> My Contact</h3>
+                        <div class="contact-info">
+                            <p><i class="fas fa-phone"></i> <strong>Phone:</strong> +27 61 0130 309</p>
+                            <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:Tashenpillay7@gmail.com">Tashenpillay7@gmail.com</a></p>
+                            <p><i class="fab fa-linkedin"></i> <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/tashen-pillay-78b272247" target="_blank">Tashen Pillay</a></p>
+                            <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Durban, South Africa</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <h3><i class="fas fa-handshake"></i> Reference</h3>
+                        <div class="contact-info">
+                            <p><strong>Kovilan Pillay</strong></p>
+                            <p><i class="fas fa-phone"></i> +27 83 651 3654</p>
+                            <p><i class="fas fa-envelope"></i> <a href="mailto:Kpillay5@toyota.co.za">Kpillay5@toyota.co.za</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
 
         <footer>
-            <p>&copy; 2024 Tashen Pillay. All rights reserved.</p>
+            <p>&copy; 2025 Tashen Pillay. All rights reserved. </p>
         </footer>
     </div>
 
@@ -167,18 +265,32 @@
         function showFullCV() {
             document.getElementById('landing-page').style.display = 'none';
             document.getElementById('full-cv').style.display = 'block';
-            document.querySelector('header').style.display = 'flex'; // Show header when full CV is displayed
+            document.querySelector('header').style.display = 'flex';
+            
+            // Add smooth scroll behavior
+            document.querySelectorAll('nav a').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    window.scrollTo({
+                        top: targetSection.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                });
+            });
         }
 
-        $(document).ready(function(){
-            $('.circle').each(function(){
-                var circle = $(this);
-                var value = circle.attr('data-value');
-                circle.circleProgress({
-                    value: value,
-                    size: 120,
-                    thickness: 10,
-                    fill: { gradient: ["#00bfff", "#1e90ff"] }
+        // Add fade-in animation on scroll
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                $('.fade-in').each(function() {
+                    const bottom_of_object = $(this).offset().top + $(this).outerHeight();
+                    const bottom_of_window = $(window).scrollTop() + $(window).height();
+                    
+                    if (bottom_of_window > bottom_of_object) {
+                        $(this).addClass('visible');
+                    }
                 });
             });
         });
